@@ -9,13 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var clicks: UILabel!
-    var clicksNum: Int = 0
 
-    @IBAction func increment(sender: AnyObject) {
-        clicksNum++
-        clicks.text = "Clicks: \(clicksNum)"
+    var total:Int = 0
+    @IBOutlet var label: UILabel!
+    
+    func increment() {
+        total++
+        label.text = "Total: \(total)"
     }
+    
+    func decrement() {
+        total--
+        label.text = "Total: \(total)"
+    }
+    
+    @IBAction func switch1(sender: UISwitch) {
+        if sender.on {
+            increment()
+        } else {
+            decrement()
+        }
+    }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
