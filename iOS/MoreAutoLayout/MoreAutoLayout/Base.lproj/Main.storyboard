@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoreAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdx-r7-yzG">
+                                <rect key="frame" x="20" y="20" width="560" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.4565788579987814" blue="0.58904500947621752" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="H8L-YW-Y3m"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I3W-U4-eQy">
+                                <rect key="frame" x="20" y="156" width="276" height="128"/>
+                                <color key="backgroundColor" red="0.33494413010473034" green="0.86708534839175244" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="T9L-22-RSL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vg3-PA-iKf">
+                                <rect key="frame" x="304" y="156" width="276" height="128"/>
+                                <color key="backgroundColor" red="0.37510501346102731" green="1" blue="0.6815227694831909" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="jay-WG-ypN"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ship" translatesAutoresizingMaskIntoConstraints="NO" id="bOx-Vj-Mdm">
+                                <rect key="frame" x="105" y="372" width="390" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bOx-Vj-Mdm" secondAttribute="height" multiplier="15:8" id="cRB-gl-8an"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cdx-r7-yzG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3u2-GZ-RUl"/>
+                            <constraint firstItem="I3W-U4-eQy" firstAttribute="leading" secondItem="cdx-r7-yzG" secondAttribute="leading" id="4Ak-CR-iMI"/>
+                            <constraint firstItem="I3W-U4-eQy" firstAttribute="top" secondItem="cdx-r7-yzG" secondAttribute="bottom" constant="8" id="Ib3-EL-d22"/>
+                            <constraint firstItem="cdx-r7-yzG" firstAttribute="width" secondItem="I3W-U4-eQy" secondAttribute="width" multiplier="2" constant="8" id="K1j-TF-uPE"/>
+                            <constraint firstItem="Vg3-PA-iKf" firstAttribute="top" secondItem="cdx-r7-yzG" secondAttribute="bottom" constant="8" id="QTf-fv-cwM"/>
+                            <constraint firstItem="bOx-Vj-Mdm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="Qjh-p0-l4I"/>
+                            <constraint firstItem="bOx-Vj-Mdm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="VTf-UU-fqu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bOx-Vj-Mdm" secondAttribute="bottom" constant="20" id="XQX-h4-sQf"/>
+                            <constraint firstItem="cdx-r7-yzG" firstAttribute="width" secondItem="Vg3-PA-iKf" secondAttribute="width" multiplier="2" constant="8" id="h9c-Cd-IYu"/>
+                            <constraint firstItem="cdx-r7-yzG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mVP-2F-fMP"/>
+                            <constraint firstItem="Vg3-PA-iKf" firstAttribute="trailing" secondItem="cdx-r7-yzG" secondAttribute="trailing" id="vMc-X5-77f"/>
+                            <constraint firstItem="cdx-r7-yzG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wcS-q9-CU5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ship" width="944" height="460"/>
+    </resources>
+</document>
