@@ -10,28 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var total:Int = 0
+    @IBOutlet var segment: UISegmentedControl!
     @IBOutlet var label: UILabel!
     
-    func increment() {
-        total++
-        label.text = "Total: \(total)"
-    }
-    
-    func decrement() {
-        total--
-        label.text = "Total: \(total)"
-    }
-    
-    @IBAction func switch1(sender: UISwitch) {
-        if sender.on {
-            increment()
-        } else {
-            decrement()
+    @IBAction func changed(sender: UISegmentedControl) {
+        
+        if sender.selectedSegmentIndex == 0 {
+            label.text = "First"
+        } else if sender.selectedSegmentIndex == 1 {
+            label.text = "Second"
+        } else if sender.selectedSegmentIndex == 2 {
+            label.text = "Third"
+        } else if sender.selectedSegmentIndex == 3 {
+            label.text = "Fourth"
         }
+        
     }
-    
-    
     
     
     override func viewDidLoad() {
