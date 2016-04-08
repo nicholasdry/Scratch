@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A08235DF1CB813B400D084DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08235DE1CB813B400D084DA /* AppDelegate.swift */; };
+		A08235E11CB813B400D084DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08235E01CB813B400D084DA /* ViewController.swift */; };
+		A08235E41CB813B400D084DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08235E21CB813B400D084DA /* Main.storyboard */; };
+		A08235E71CB813B400D084DA /* GolfTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A08235E51CB813B400D084DA /* GolfTrack.xcdatamodeld */; };
+		A08235E91CB813B400D084DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08235E81CB813B400D084DA /* Assets.xcassets */; };
+		A08235EC1CB813B400D084DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08235EA1CB813B400D084DA /* LaunchScreen.storyboard */; };
+		A08235F71CB813B400D084DA /* GolfTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08235F61CB813B400D084DA /* GolfTrackTests.swift */; };
+		A08236021CB813B400D084DA /* GolfTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08236011CB813B400D084DA /* GolfTrackUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A08235F31CB813B400D084DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08235D31CB813B400D084DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A08235DA1CB813B400D084DA;
+			remoteInfo = GolfTrack;
+		};
+		A08235FE1CB813B400D084DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08235D31CB813B400D084DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A08235DA1CB813B400D084DA;
+			remoteInfo = GolfTrack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A08235DB1CB813B400D084DA /* GolfTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A08235DE1CB813B400D084DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A08235E01CB813B400D084DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A08235E31CB813B400D084DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A08235E61CB813B400D084DA /* GolfTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GolfTrack.xcdatamodel; sourceTree = "<group>"; };
+		A08235E81CB813B400D084DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A08235EB1CB813B400D084DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A08235ED1CB813B400D084DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A08235F21CB813B400D084DA /* GolfTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A08235F61CB813B400D084DA /* GolfTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfTrackTests.swift; sourceTree = "<group>"; };
+		A08235F81CB813B400D084DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A08235FD1CB813B400D084DA /* GolfTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A08236011CB813B400D084DA /* GolfTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfTrackUITests.swift; sourceTree = "<group>"; };
+		A08236031CB813B400D084DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A08235D81CB813B400D084DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08235EF1CB813B400D084DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08235FA1CB813B400D084DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A08235D21CB813B400D084DA = {
+			isa = PBXGroup;
+			children = (
+				A08235DD1CB813B400D084DA /* GolfTrack */,
+				A08235F51CB813B400D084DA /* GolfTrackTests */,
+				A08236001CB813B400D084DA /* GolfTrackUITests */,
+				A08235DC1CB813B400D084DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A08235DC1CB813B400D084DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A08235DB1CB813B400D084DA /* GolfTrack.app */,
+				A08235F21CB813B400D084DA /* GolfTrackTests.xctest */,
+				A08235FD1CB813B400D084DA /* GolfTrackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A08235DD1CB813B400D084DA /* GolfTrack */ = {
+			isa = PBXGroup;
+			children = (
+				A08235DE1CB813B400D084DA /* AppDelegate.swift */,
+				A08235E01CB813B400D084DA /* ViewController.swift */,
+				A08235E21CB813B400D084DA /* Main.storyboard */,
+				A08235E81CB813B400D084DA /* Assets.xcassets */,
+				A08235EA1CB813B400D084DA /* LaunchScreen.storyboard */,
+				A08235ED1CB813B400D084DA /* Info.plist */,
+				A08235E51CB813B400D084DA /* GolfTrack.xcdatamodeld */,
+			);
+			path = GolfTrack;
+			sourceTree = "<group>";
+		};
+		A08235F51CB813B400D084DA /* GolfTrackTests */ = {
+			isa = PBXGroup;
+			children = (
+				A08235F61CB813B400D084DA /* GolfTrackTests.swift */,
+				A08235F81CB813B400D084DA /* Info.plist */,
+			);
+			path = GolfTrackTests;
+			sourceTree = "<group>";
+		};
+		A08236001CB813B400D084DA /* GolfTrackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A08236011CB813B400D084DA /* GolfTrackUITests.swift */,
+				A08236031CB813B400D084DA /* Info.plist */,
+			);
+			path = GolfTrackUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A08235DA1CB813B400D084DA /* GolfTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A08236061CB813B400D084DA /* Build configuration list for PBXNativeTarget "GolfTrack" */;
+			buildPhases = (
+				A08235D71CB813B400D084DA /* Sources */,
+				A08235D81CB813B400D084DA /* Frameworks */,
+				A08235D91CB813B400D084DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GolfTrack;
+			productName = GolfTrack;
+			productReference = A08235DB1CB813B400D084DA /* GolfTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A08235F11CB813B400D084DA /* GolfTrackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A08236091CB813B400D084DA /* Build configuration list for PBXNativeTarget "GolfTrackTests" */;
+			buildPhases = (
+				A08235EE1CB813B400D084DA /* Sources */,
+				A08235EF1CB813B400D084DA /* Frameworks */,
+				A08235F01CB813B400D084DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A08235F41CB813B400D084DA /* PBXTargetDependency */,
+			);
+			name = GolfTrackTests;
+			productName = GolfTrackTests;
+			productReference = A08235F21CB813B400D084DA /* GolfTrackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A08235FC1CB813B400D084DA /* GolfTrackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A082360C1CB813B400D084DA /* Build configuration list for PBXNativeTarget "GolfTrackUITests" */;
+			buildPhases = (
+				A08235F91CB813B400D084DA /* Sources */,
+				A08235FA1CB813B400D084DA /* Frameworks */,
+				A08235FB1CB813B400D084DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A08235FF1CB813B400D084DA /* PBXTargetDependency */,
+			);
+			name = GolfTrackUITests;
+			productName = GolfTrackUITests;
+			productReference = A08235FD1CB813B400D084DA /* GolfTrackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A08235D31CB813B400D084DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Nicholas Dry";
+				TargetAttributes = {
+					A08235DA1CB813B400D084DA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Y6H6L8XHG3;
+					};
+					A08235F11CB813B400D084DA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Y6H6L8XHG3;
+						TestTargetID = A08235DA1CB813B400D084DA;
+					};
+					A08235FC1CB813B400D084DA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Y6H6L8XHG3;
+						TestTargetID = A08235DA1CB813B400D084DA;
+					};
+				};
+			};
+			buildConfigurationList = A08235D61CB813B400D084DA /* Build configuration list for PBXProject "GolfTrack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A08235D21CB813B400D084DA;
+			productRefGroup = A08235DC1CB813B400D084DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A08235DA1CB813B400D084DA /* GolfTrack */,
+				A08235F11CB813B400D084DA /* GolfTrackTests */,
+				A08235FC1CB813B400D084DA /* GolfTrackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A08235D91CB813B400D084DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08235EC1CB813B400D084DA /* LaunchScreen.storyboard in Resources */,
+				A08235E91CB813B400D084DA /* Assets.xcassets in Resources */,
+				A08235E41CB813B400D084DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08235F01CB813B400D084DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08235FB1CB813B400D084DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A08235D71CB813B400D084DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08235E71CB813B400D084DA /* GolfTrack.xcdatamodeld in Sources */,
+				A08235E11CB813B400D084DA /* ViewController.swift in Sources */,
+				A08235DF1CB813B400D084DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08235EE1CB813B400D084DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08235F71CB813B400D084DA /* GolfTrackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08235F91CB813B400D084DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08236021CB813B400D084DA /* GolfTrackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A08235F41CB813B400D084DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A08235DA1CB813B400D084DA /* GolfTrack */;
+			targetProxy = A08235F31CB813B400D084DA /* PBXContainerItemProxy */;
+		};
+		A08235FF1CB813B400D084DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A08235DA1CB813B400D084DA /* GolfTrack */;
+			targetProxy = A08235FE1CB813B400D084DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A08235E21CB813B400D084DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A08235E31CB813B400D084DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A08235EA1CB813B400D084DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A08235EB1CB813B400D084DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A08236041CB813B400D084DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A08236051CB813B400D084DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A08236071CB813B400D084DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GolfTrack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasdry.GolfTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A08236081CB813B400D084DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GolfTrack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasdry.GolfTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A082360A1CB813B400D084DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GolfTrackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasdry.GolfTrackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GolfTrack.app/GolfTrack";
+			};
+			name = Debug;
+		};
+		A082360B1CB813B400D084DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GolfTrackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasdry.GolfTrackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GolfTrack.app/GolfTrack";
+			};
+			name = Release;
+		};
+		A082360D1CB813B400D084DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GolfTrackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasdry.GolfTrackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GolfTrack;
+			};
+			name = Debug;
+		};
+		A082360E1CB813B400D084DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GolfTrackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasdry.GolfTrackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GolfTrack;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A08235D61CB813B400D084DA /* Build configuration list for PBXProject "GolfTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A08236041CB813B400D084DA /* Debug */,
+				A08236051CB813B400D084DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A08236061CB813B400D084DA /* Build configuration list for PBXNativeTarget "GolfTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A08236071CB813B400D084DA /* Debug */,
+				A08236081CB813B400D084DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A08236091CB813B400D084DA /* Build configuration list for PBXNativeTarget "GolfTrackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A082360A1CB813B400D084DA /* Debug */,
+				A082360B1CB813B400D084DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A082360C1CB813B400D084DA /* Build configuration list for PBXNativeTarget "GolfTrackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A082360D1CB813B400D084DA /* Debug */,
+				A082360E1CB813B400D084DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A08235E51CB813B400D084DA /* GolfTrack.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A08235E61CB813B400D084DA /* GolfTrack.xcdatamodel */,
+			);
+			currentVersion = A08235E61CB813B400D084DA /* GolfTrack.xcdatamodel */;
+			path = GolfTrack.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A08235D31CB813B400D084DA /* Project object */;
+}
