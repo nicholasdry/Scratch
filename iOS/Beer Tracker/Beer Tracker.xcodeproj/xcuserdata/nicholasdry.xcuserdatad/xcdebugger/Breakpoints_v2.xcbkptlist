@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beer Tracker/ViewController.swift"
-            timestampString = "481913680.635185"
+            timestampString = "481915209.474186"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "saveBeer(_:)"
             landmarkType = "5">
          </BreakpointContent>
