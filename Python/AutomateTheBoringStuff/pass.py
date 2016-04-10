@@ -7,7 +7,7 @@ passwords = {
             '''
 
             'Site Name': 'Password'
-            'Site Name': 'Password',
+            'Site Name': 'Password'
 
             '''
             }
