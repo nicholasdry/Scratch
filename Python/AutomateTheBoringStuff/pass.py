@@ -2,7 +2,14 @@
 import pyperclip
 import sys
 
-passwords = {'GitHub': 'Mustafa1'
+passwords = {
+            # Put passwords in like this:
+            '''
+
+            'Site Name': 'Password'
+            'Site Name': 'Password',
+
+            '''
             }
 
 if len(sys.argv) < 2:
