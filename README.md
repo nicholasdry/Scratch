@@ -1,6 +1,9 @@
 # Scratch
 Random code snippets and small programs used to learn new languages.
 
+# Status
+- Learning Node.JS and MongoDB
+
 # Notables
 
 #### Beer Tracker
