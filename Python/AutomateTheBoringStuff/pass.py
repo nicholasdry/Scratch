@@ -10,6 +10,8 @@ passwords = {
             'Site Name': 'Password'
 
             '''
+
+		"GitHub": "Bruh"
             }
 
 if len(sys.argv) < 2:
