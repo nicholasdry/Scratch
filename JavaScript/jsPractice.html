@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>JS Practice</title>
+	</head>
+
+	<body>
+
+		<form>
+			<input type="text" id="enter">
+			<input type="button" onclick="calculate()">
+		</form>
+		<div id="result">
+			
+		</div>
+		<script>
+
+			function calculate() {
+				var number = document.getElementById('enter').value;
+				
+				while (number >= 0) {
+					console.log(number);
+					number--;
+				}
+			}
+			
+		</script>
+
+	</body>
+
+</html>
