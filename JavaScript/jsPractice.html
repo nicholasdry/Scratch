@@ -6,20 +6,22 @@
 	<body>
 
 		<form>
-			<input type="text" id="enter">
-			<input type="button" onclick="calculate()">
+			<input type="text" id="a">
+			<input type="text" id="b">
+			<input type="button" onclick="run()">
 		</form>
 		<div id="result">
 			
 		</div>
 		<script>
 
-			function calculate() {
-				var number = document.getElementById('enter').value;
-				
-				while (number >= 0) {
-					console.log(number);
-					number--;
+			function run() {
+				var a = document.getElementById('a').value;
+				var b = document.getElementById('b').value;
+				if ((a - b) > 0) {
+					console.log(a);
+				} else {
+					console.log(b);
 				}
 			}
 			
