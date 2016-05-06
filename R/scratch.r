@@ -1,7 +1,6 @@
-# Provides you the largest parameter passed in
-max(5,6,7)
+a <- c(1, 5, TRUE)
+a # this will output [1] 1, 5, 1
 
-# Following function performs logarithmic math
-log(base=2, 100)
-
+a <- c(1,3,"Hello", "TRUE") 
+a # this will output [1] "1", "3", "Hello", "TRUE", it converts everything into strings.
 
