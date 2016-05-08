@@ -7,8 +7,16 @@
       </head>
       <body>
           <div ng-app="">
-              <p>Enter Your Name: <input type="text" ng-model="name"></p>
-              <h1>{{name}}<img src="blinking.gif" height="25" width="20"></h1>
+              <p>Enter the title of your website: <input type="text" ng-model="title"></p>
+              <p>Enter the subtitle of your website: <input type="text" ng-model="subtitle"></p>
+              <p>Enter the content of your website: <textarea rows="4" cols="50" ng-model="content"></textarea></p>
+              <p>Below is how your website will look:</p>
+              
+              <div id="website-frame">
+                  <h1>{{title}}</h1>
+                  <h3>{{subtitle}}</h3>
+                  <p>{{content}}</p>
+              </div>
           </div>
       </body>
 </html>
