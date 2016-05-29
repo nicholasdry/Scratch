@@ -1,0 +1,5 @@
+(define a 6)
+(define b 7)
+(define c 6)
+(define d 9)
+(+(* a b) (/ c d))
