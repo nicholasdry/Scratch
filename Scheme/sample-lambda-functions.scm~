@@ -19,9 +19,3 @@
                         1                                 ; base case return value, our satisfied if
                         (* n (factorial (- n 1))))))      ; our else condition
 
-(define fibonnacci (λ (n)
-                (if (= 0 n)
-                    0
-                (if (= 1 n)
-                    1
-                    (+ (fibonnacci (- n 2)) (fibonnacci (- n 1)))))))
