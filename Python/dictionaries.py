@@ -1,6 +1,13 @@
-dict = {'Name': "Nicholas", 
-	'Age': 21
-	};
+# Notes:
 
-print "dict['Name']: ", dict['Name']
-print "dict['Age']: ", dict['Age']
+# Dictionaries act like hash tables, especially when you have a nested list inside of 
+
+directory = {
+		'Client': ['Nicholas Dry']
+	}
+
+print(directory['Client'])
+
+directory['Client'].append('Brian Dry')
+
+print(directory['Client'])
