@@ -258,6 +258,121 @@ func makeIncrementer(inc: Int) -> ((Int) -> Int) {
 var increment = makeIncrementer(2)
 increment(7)
 
+// Function taking function as argument
+
+func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
+    for item in list {
+        if condition(item) {
+            return true
+        }
+    }
+    return false
+}
+
+func lessThanTen(number: Int) -> Bool {
+    if number < 10 {
+        return true
+    }
+    return false
+}
+
+var numbers = [20, 19, 7, 12]
+hasAnyMatches(numbers, condition: lessThanTen)
+
+numbers.map({
+    (number: Int) -> Int in
+    let result = number * 3
+    return result
+})
+
+let mappedNumbers = numbers.map({number in 3 * number})
+print(mappedNumbers)
+
+// Classes and Objects
+
+class NamedShape {
+    var numberOfSides: Double = 0
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func simpleDescription() -> String {
+        return "A shape with \(numberOfSides) sides."
+    }
+}
+
+// Inheritance
+
+class Square: NamedShape { // This is a square object, that inherits the NamedShape properties.
+    
+    var sideLength: Double
+    
+    init(sideLength: Double, name: String) {
+        self.sideLength = sideLength
+        super.init(name: name)
+        numberOfSides = 4 // This value comes from the super class.
+    }
+    
+    func area() -> Double {
+        return sideLength * numberOfSides
+    }
+    
+    override func simpleDescription() -> String {
+        return "A square with sides of length \(sideLength)."
+    }
+    
+}
+
+let test = Square(sideLength: 5.2, name: "My Test Square")
+let area = test.area() // 20.8
+test.simpleDescription()
+
+// Experiment 8:
+
+class Circle: NamedShape {
+    
+    var radius: Double
+    
+    init(radius: Double, name: String) {
+        self.radius = radius
+        super.init(name: name)
+    }
+    
+    func area() -> Double {
+        return 3.14 * (radius * radius)
+    }
+    
+    override func simpleDescription() -> String {
+        return "A circle with an area of \(area())."
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
