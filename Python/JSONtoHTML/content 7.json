@@ -1,0 +1,36 @@
+{
+  "title": "Lists",
+  "cells": [
+    {
+      "type": "text",
+      "data": "Lists are Pythons form of Arrays. They support the inclusion of multiple data types, which is different than other languages. Which means you can have a list which has numbers, strings, or objects inside of it. Lists provide a lot of builtin functionality, appending, removing, splicing. etc.<div><br></div><div>Lists can be edited after original creation.</div>"
+    },
+    {
+      "type": "text",
+      "data": "<h3>List Creation</h3>"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "list = [12, 25, \"Nicholas Dry\"]\nprint(list[0])                    # prints out the first element inside of the list\n\n# the following loop introduces several ideas.\n\"\"\"\n  1. len() function, passing a parameter of a list into this function returns the length of the list\n  2. Since we start at 0, we are starting at the zero index of the list (the beginning), and runs until three, but since 'list' only has 3 items, we want to access the indexes of 0, 1, 2, but not 3. Which works well in a for loop since the second number is exclusive and doesn't attempt to access list[3]\n\"\"\"\n\nfor i in range(0, len(list)):\n  print(list[i])"
+    },
+    {
+      "type": "text",
+      "data": "<h3>Slicing Lists</h3><div>We can break up lists using slicing techniques. This includes accessing elements or returning elements and creating new lists with them. All of this is done without editing the original list.</div>"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "list = [12, 25, \"Nicholas Dry\"\n\nlist[0] # 12\nlist[0:1] # 12, 25"
+    },
+    {
+      "type": "text",
+      "data": "<h3>Editing Lists</h3><div>Using several builtin functions in Python lists, we can edit them with ease.</div>"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "list = [12, 25, \"Nicholas Dry\"\n"
+    }
+  ]
+}

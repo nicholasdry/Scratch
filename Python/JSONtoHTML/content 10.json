@@ -1,0 +1,9 @@
+{
+  "title": "How To Run Python Programs",
+  "cells": [
+    {
+      "type": "text",
+      "data": "As long as you have Python installed, you can run it directly from the command line in two different ways.<div><br></div><div>You can type in the command <b>python</b>&nbsp;which will give you an interactive shell which you can run scripts from inside, or you can save files in a text editor with the extension <b>.py</b>&nbsp;and then run the command <b>python script.py</b>, it will execute the script.</div><div><br></div><div>You can also use a variety of IDE’s to run Python, the recommended one is PyCharm which is published by JetBrains.</div><div><br></div><div>Note: When developing Python scripts, be aware of the version you are using, there is Python 2 and Python 3. Aside from syntax differences, you also have to use the command <b>python3</b>&nbsp;to initiate the shell, and to run Python 3 scripts. If you do not do that, it calls the wrong interpreter and could lead to errors in its execution.</div>"
+    }
+  ]
+}

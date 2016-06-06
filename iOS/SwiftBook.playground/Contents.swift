@@ -17,6 +17,23 @@ let explicitDouble: Double = 70 // However, if you simply want to declare the va
 // Experiment 1:
 let explicitFloat: Float = 4
 
+// Type Limits
+let maxInt32 = UInt32.max
+let maxInt64 = UInt64.max
+
+let minInt32 = UInt32.min
+let minInt64 = UInt64.min
+
+// Type conversions
+let octalNumber = 0o125 // This implicitly will show as a decimal number
+let intOctal = Int(octalNumber)
+let hexNumber = 0xf345e
+let binNumber = 0b1010011111100101010001
+
+// Type Aliasing, which is similar to typedef in C, it carries over all members of the UInt.. family or whatever type it is chosen to be assigned to.
+typealias bigNum = UInt64
+let bigNumTest: bigNum = 564641351874353546
+
 let label = "The width is "
 let width = 94
 let widthLabel = label + String(width)
@@ -35,6 +52,20 @@ let floatString = "The number is \(floatExperiment)."
 
 let myName = "Nicholas Dry"
 let helloMe = "Hello, \(myName)."
+
+// Tuples are values which can not be changed once they are assigned at compile time. Tuples are particularly useful when you are returning values from a function, because then those computed values cannot be changed.
+
+let http = ("Error Code", "Error Number")
+
+// Tuples allow you to access values by .index_number
+let http404error = (404, "Not Found")
+print("The error is: \(http404error.0).") // The error is: 404.
+print("The error is: \(http404error.1).") // The error is: Not Found.
+
+// Tuples can also have their values assigned a key.
+let http200error = (statusCode: 400, description: "Ok")
+print(http200error.statusCode)
+print(http200error.description)
 
 // Arrays and Dictionaries
 
@@ -67,7 +98,14 @@ for score in individualScores {
 
 print(teamScore)
 
-// Optionals
+// Optionals are good when converting a string into a possible number.
+
+let possibleNumber = "123"
+if let actualNumber = Int(possibleNumber) { // Since the value upon conversion is not nil, it allows us to use the temporary constant of actualNumber in the string below.
+    print("\"\(possibleNumber)\" has an integer value of \(actualNumber).")
+} else {
+    print("\"\(possibleNumber)\" could not be converted to an integer.")
+}
 
 var optionalString: String? = "Hello"
 print(optionalString == nil) // false
@@ -89,6 +127,20 @@ if let name = optionalName2 {
 let nickName: String? = nil
 let fullName: String = "John Appleseed"
 let informalGreeting = "Hi \(nickName ?? fullName)"
+
+// Error Throwing, if we have a function which might throw an error, we want to wrap that function call inside of a try..catch block.
+
+func canThrowAnError() throws {
+    
+    // This function may or may not throw an error.
+    
+}
+
+//try {
+//    try canThrowAnError() // This might throw an error, but if it doesn't, any code immediately below it will execute.
+//} catch {
+//    // This will execute if the function call causes an error.
+//}
 
 let vegetable = "red pepper"
 switch vegetable {

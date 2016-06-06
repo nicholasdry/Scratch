@@ -1,0 +1,14 @@
+{
+  "title": "Functions",
+  "cells": [
+    {
+      "type": "text",
+      "data": "Functions are useful because if you wish to run a block of code at a certain point again and don’t feel like copying it into your code again, you can simply make a function which can be called again.<div><br></div><div>Functions can take parameters and also return edited inputs or global variables. It is all dependent on the scope of the variable.</div><div><br></div><div>Below we have an example of a function with and without parameters.</div>"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "def sayHello():\n  print(\"Hello!\")\n\ndef addOne(x):\n  return x + 1\n  \nnumber = 1\nnumber = addOne(number)\n\nsayHello()  # this calls our function, and the function executes\n\nprint(number) # this will print out 2\n"
+    }
+  ]
+}

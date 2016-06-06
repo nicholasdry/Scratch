@@ -1,10 +1,10 @@
 # Rebuilding of the output to HTML via JSON from the application Quiver.
 
-# TODO: Allow this script access to other .json files inside of the dictionary which would allow access.
-# Sub-TODO: Store all .html extensions into a dictionary for easy printing inside of the home page.
-# Sub-Sub-TODO: Allow each page to access a parent and a sibling page.
+# TODO: Allow each page to access a parent and a sibling page.
+# TODO: Style code pages differently.
 
 import json
+import os
 import sys
 
 def generateCSS(outputFile):    # Generates <style> css in the HTML file.
@@ -20,41 +20,83 @@ def openTags(outputFile, jsonContent):  # Generates all the boilerplate opening 
     outputFile.write("\t</head>\n")
     outputFile.write("\t<body>\n")
     outputFile.write("\t\t\t<h1>%s</h1>\n" % (jsonContent['title']))
+    outputFile.write("\t\t\t<a href=\"index.html\">Go Back Home</a>\n")
+    outputFile.write("\t\t\t<hr>\n")
+
+def indexOpenTags(outputFile):  # Generates all the boilerplate opening code for the index page.
+    outputFile.write("<html>\n")
+    outputFile.write("\t<head>\n")
+    generateCSS(outputFile)
+    outputFile.write("\t\t<title>Index</title>\n")
+    outputFile.write("\t</head>\n")
+    outputFile.write("\t<body>\n")
+    outputFile.write("\t\t\t<h1>Index</h1>\n")
     outputFile.write("\t\t\t<hr>\n")
 
 def closeTags(outputFile):  # Generates all the boilerplate closing code.
     outputFile.write("\t</body>\n")
     outputFile.write("</html>")
 
-with open(sys.argv[1]) as jsonFile: # This returns the JSON object as a dictionary.
-    jsonContent = json.load(jsonFile)
 
-htmlFile = jsonContent['title'] + ".html" # Generating the .html file name.
+directory = os.listdir() # This returns the current working directory.
+jsonFiles = []
 
-outputHTML = open(htmlFile, "w")    # Now we create the file itself.
+for i in directory: # This grabs all json files inside this directory.
+    if i.endswith(".json"):
+        jsonFiles.append(i)
 
-openTags(outputHTML, jsonContent)
+for i in jsonFiles: # Then we parse through each of them indiviually, and make an HTML page for each of them.
 
-classTag = ""   # These provide the tags for later editing with styles.
-idTag = ""
-divContent = ""
+    with open(i) as jsonFile: # This returns the JSON object as a dictionary.
+        jsonContent = json.load(jsonFile)
 
-for i in range(0, len(jsonContent['cells'])):   # Now we begin parsing the 'cells' portion of the dictionary.
+    htmlFile = jsonContent['title'] + ".html" # Generating the .html file name.
 
-    innerText = str(jsonContent['cells'][i]).split("'") # Splits up the content for easier access inside of the dictionary element.
+    outputHTML = open(htmlFile, "w")    # Now we create the file itself.
 
-    for i in range(0, len(innerText)):  # Searches for useable information.
-        token = innerText[i]
-        if token == "text":
-            classTag = "text"
-        elif token == "code":
-            classTag = "code"
-        elif token == "data":
-            i += 2
-            divContent = innerText[i]
+    openTags(outputHTML, jsonContent)
 
-    outputHTML.write("\t\t\t<div class=\"%s\" id=\"%s\"> %s </div>\n" % (classTag, idTag, divContent))  # Outputs.
+    classTag = ""   # These provide the tags for later editing with styles.
+    idTag = ""
+    divContent = ""
 
-closeTags(outputHTML)
+    for i in range(0, len(jsonContent['cells'])):   # Now we begin parsing the 'cells' portion of the dictionary.
 
-outputHTML.close()
+        innerText = str(jsonContent['cells'][i]).split("'") # Splits up the content for easier access inside of the dictionary element.
+
+        for i in range(0, len(innerText)):  # Searches for useable information.
+            token = innerText[i]
+            if token == "text":
+                classTag = "text"
+            elif token == "code":
+                classTag = "code"
+            elif token == "data":
+                i += 2
+                divContent = innerText[i]
+
+        outputHTML.write("\t\t\t<div class=\"%s\" id=\"%s\"> %s </div>\n" % (classTag, idTag, divContent))  # Outputs.
+
+    closeTags(outputHTML)
+
+    outputHTML.close()
+
+# Below is the code which handles the index page since all .html files had already been created.
+
+directory = os.listdir() # This returns the current working directory.
+htmlFiles = []
+
+for i in directory: # This grabs all json files inside this directory.
+    if i.endswith(".html") and i != "index.html": # This is done so it doesn't add index.html inside of itself.
+        htmlFiles.append(i)
+
+htmlFile = open("index.html", "w")
+
+indexOpenTags(htmlFile)
+
+for i in htmlFiles:
+    pageName = ""
+    for j in range(0, len(i)-5):
+        pageName += i[j]
+    htmlFile.write("\t\t\t<a href=\"%s\">%s</a>\n<br>\n" % (i, pageName))
+
+htmlFile.close()

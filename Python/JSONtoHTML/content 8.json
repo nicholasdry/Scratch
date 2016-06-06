@@ -1,0 +1,14 @@
+{
+  "title": "Syntax",
+  "cells": [
+    {
+      "type": "text",
+      "data": "Python is known for it’s very simple syntax, since it is a scripting language it is meant to be written quickly and be very legible.<div><br></div><div>The only confusing issue with Python compared to other languages is that it features whitespace over brace usage. So code must be indented perfectly in order for something to run if it is inside a conditional.</div>"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "# This is a comment, it is invisble to the interpreter and only used to document your code\n\"\"\"\n  This is a multiline comment.\n\"\"\"\n\nprint(\"Hello world!\")   # this syntax is valid in Python 3\nprint \"Hello world!\"    # this syntax is valid in Python 2.7 and 3"
+    }
+  ]
+}

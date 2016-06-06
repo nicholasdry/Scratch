@@ -1,0 +1,50 @@
+{
+  "title": "Loops, Conditionals, etc.",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<h3>If Conditional</h3><div>In Python, the syntax of if conditonals are very similar to every other language, a boolean expression is evaluted and then that determines which body of the conditions is executed.</div>"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "number = 5\n\nif number == 5:\n  print(\"Equal\")"
+    },
+    {
+      "type": "text",
+      "data": "<h3>Else Conditional</h3><div>Again, the Python syntax is very similar, albeit easier to understand than some of the other languages. The only issue is the aspect of whitespace in Python. Whereas other languages benefit from the use of braces.</div>"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "number = 5\n\nif number == 5:\n  print(\"Equal\")\nelse:\n  print(\"Not equal\")\n  \n\"\"\"\nThis, of course does not require an else condition, because it would fall through if it is not equal\n\"\"\""
+    },
+    {
+      "type": "text",
+      "data": "<h3>Elif Conditional</h3><div>If you wanted to test multiple different conditionals against a value you could use the elif conditional as opposed to putting a new if statement.</div>"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "number = 6\n\nif number == 5:\n  print(\"Equal to 5\")\nelif number == 6:\n  print(\"Equal to 6\")\nelse:\n  print(\"Not equal\")"
+    },
+    {
+      "type": "text",
+      "data": "<h3>For Loops</h3><div>For loops are essential for executing a block of code multiple times.</div><div><br></div><div>By using the range function, the first number, 0, is inclusive, meaning it will print out 0 in this execution. The second number, 11, is exclusive, it’s the loops upper bound and will not print out.</div>"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "for i in range(0,11):\n  print(i)"
+    },
+    {
+      "type": "text",
+      "data": "<h3>While Loop</h3><div>While loops are different because they do not do the incrementation automatically like in for loops, which means manual incrementation is needed to make sure the loop does not run on forever.</div>"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "i = 0\n\nwhile (i < 0):\n  print(i)\n  i = i + 1"
+    }
+  ]
+}
