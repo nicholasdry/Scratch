@@ -1,5 +1,3 @@
-# This is the driver class for the bank account app
-
 from client import Client
 
 clientList = []
