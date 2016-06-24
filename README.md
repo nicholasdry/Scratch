@@ -2,7 +2,7 @@
 Random code snippets and small programs used to learn new languages.
 
 # Status
-- Learning Scheme and Functional Programming
+- Learning Scheme
 
 # Notables
 
