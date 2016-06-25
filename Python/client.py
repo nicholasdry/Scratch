@@ -6,5 +6,5 @@ class Client:
 		self.balance = balance
 		self.salary = salary
 
-	def printClientInfo(self):
+	def printClient(self):
 		print "Name: %s\nAge: %s\nAccount Balance: %s\nSalary: %s" % (self.name, self.age, self.balance, self.salary)
