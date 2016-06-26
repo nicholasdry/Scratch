@@ -7,4 +7,4 @@ class Client:
 		self.salary = salary
 
 	def printClient(self):
-		print "Name: %s\nAge: %s\nAccount Balance: %s\nSalary: %s" % (self.name, self.age, self.balance, self.salary)
+		print "Name: %s\nAge: %s\nBalance: %s\nSalary: %s" % (self.name, self.age, self.balance, self.salary)
