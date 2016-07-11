@@ -1,3 +1,5 @@
+# Nicholas Dry
+
 # TODO: Add in a search query.
 # TODO: Add a jump count to stop potential website from continuously being jumped to.
 # TODO: Favorite sites, which allow you to continue jumping on
