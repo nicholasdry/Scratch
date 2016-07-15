@@ -1,3 +1,5 @@
+# Practice in functional python programming
+
 print("This program visualizes the following lambda expression: lambda x,y: x+y, <list name>")
 
 numberOfItems = int(raw_input("Enter the number of items you wish to sum > "))
