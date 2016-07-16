@@ -23,7 +23,7 @@ links = soup.find_all("a", href=True)
 
 # Checks to see if they are valid links
 for i in links:
-	if i.get("href").startswith("mailto"):
+	if i.get("href").startswith("mailto"): # This handles email addresses
 		continue
 	else: 
 		linkList.append(i.get('href'))
