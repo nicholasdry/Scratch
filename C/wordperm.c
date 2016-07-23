@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -8,7 +9,7 @@ typedef struct character {
       int count;
 } chars;
 
-chars character[26];
+chars chars[26];
 
 int factorial(int a) {
       if (a == 0) {
