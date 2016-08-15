@@ -2,8 +2,6 @@ from client import Client
 
 clientList = []
 
-choice = ""
-
 name = ""
 age = 0
 currentBalance = 0
