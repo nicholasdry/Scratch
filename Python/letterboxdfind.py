@@ -6,14 +6,14 @@ from selenium import webdriver
 topFilms = []
 
 driver = webdriver.Firefox()
-driver.get("http://letterboxd.com/films/genre/action/")
-time.sleep(10)
-soup = BeautifulSoup(driver.page_source, "html.parser")
-topMovies = soup.findAll('img')
+#driver.get("http://letterboxd.com/films/genre/action/")
+#time.sleep(10)
+#soup = BeautifulSoup(driver.page_source, "html.parser")
+#topMovies = soup.findAll('img')
 
-for i in topMovies:
+#for i in topMovies:
 	#print(i.get('alt', ''))
-	topFilms.append(i.get('alt', ''))
+#	topFilms.append(i.get('alt', ''))
 
 for i in range(1,20):
 	url = "http://letterboxd.com/films/popular/genre/action/size/small/page/" + str(i) + "/"
@@ -24,10 +24,13 @@ for i in range(1,20):
 	for j in topMovies:
 		#print(j.get('alt', ''))
 		topFilms.append(j.get('alt', ''))
+		print(j.get('alt', ''))
 	print("Page {} Done".format(i))
 print("Top Done")
 
-print(len(topMovies))
+print(len(topFilms))
+
+cont = raw_input("Continue [y/n]")
 
 # Now we handle each persons watchlist
 myMovies = []
@@ -36,13 +39,13 @@ velzyMovies = []
 justinMovies = []
 
 print("Starting Me")
-driver.get("http://letterboxd.com/nicholasdry/films/")
-time.sleep(10)
-soup = BeautifulSoup(driver.page_source, "html.parser")
-topMovies = soup.findAll('img')
+#driver.get("http://letterboxd.com/nicholasdry/films/")
+#time.sleep(10)
+#soup = BeautifulSoup(driver.page_source, "html.parser")
+#topMovies = soup.findAll('img')
 
-for i in topMovies:
-	myMovies.append(i.get('alt', ''))
+#for i in topMovies:
+#	myMovies.append(i.get('alt', ''))
 
 for i in range(1,16):
 	url = "http://letterboxd.com/nicholasdry/films/page/" + str(i) + "/"
@@ -53,6 +56,7 @@ for i in range(1,16):
 	for j in topMovies:
 		#print(j.get('alt', ''))
 		myMovies.append(j.get('alt', ''))
+		print(j.get('alt', ''))
 	print("Page {} Done".format(i))
 # now we should have my movies
 print("Me Done")
@@ -62,13 +66,13 @@ print("Me Done")
 
 #Now velzy
 print("Starting Velzy")
-driver.get("http://letterboxd.com/velzinator/films/")
-time.sleep(10)
-soup = BeautifulSoup(driver.page_source, "html.parser")
-topMovies = soup.findAll('img')
+#driver.get("http://letterboxd.com/velzinator/films/")
+#time.sleep(10)
+#soup = BeautifulSoup(driver.page_source, "html.parser")
+#topMovies = soup.findAll('img')
 
-for i in topMovies:
-	velzyMovies.append(i.get('alt', ''))
+#for i in topMovies:
+	#velzyMovies.append(i.get('alt', ''))
 
 for i in range(1,6):
 	url = "http://letterboxd.com/velzinator/films/page/" + str(i) + "/"
