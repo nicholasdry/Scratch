@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib2
+import sys
 import time
 from selenium import webdriver
 
@@ -60,6 +61,16 @@ for i in range(1,16):
 	print("Page {} Done".format(i))
 # now we should have my movies
 print("Me Done")
+
+output = open("output.txt", "w")
+
+for i in topFilms:
+	if (i not in myMovies and i not in velzyMovies and i not in justinMovies and i not in andyMovies):
+		print(i)
+		output.write(i)
+		output.write("\n")
+
+sys.exit()
 
 #for i in myMovies:
 #	print(i)
