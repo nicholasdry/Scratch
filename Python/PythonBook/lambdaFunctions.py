@@ -1,4 +1,4 @@
-# Lambda for incrementation
+# Lambdas
 def incrementor(n):
 	return lambda x: x+n
 
