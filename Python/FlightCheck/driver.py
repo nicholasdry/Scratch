@@ -1,5 +1,4 @@
-# Nicholas Dry
-# TODO: Check multiple airlines
+# Nicholas TODO: Check multiple airlines
 
 from bs4 import BeautifulSoup
 import urllib2
