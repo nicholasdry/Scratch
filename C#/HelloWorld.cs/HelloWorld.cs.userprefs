@@ -1,0 +1,13 @@
+﻿<Properties StartupConfiguration="{68A88F1D-17AD-429D-9F21-8D3CF80BE5AC}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorld.cs/Program.cs">
+    <Files>
+      <File FileName="HelloWorld.cs/Program.cs" Line="10" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HelloWorld.cs PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
