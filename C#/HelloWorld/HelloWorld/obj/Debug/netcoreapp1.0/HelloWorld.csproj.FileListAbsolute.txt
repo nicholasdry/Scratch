@@ -1,0 +1,6 @@
+/Users/nicholasdry/Documents/GitHub/Scratch/C#/HelloWorld/HelloWorld/bin/Debug/netcoreapp1.0/HelloWorld.dll
+/Users/nicholasdry/Documents/GitHub/Scratch/C#/HelloWorld/HelloWorld/bin/Debug/netcoreapp1.0/HelloWorld.pdb
+/Users/nicholasdry/Documents/GitHub/Scratch/C#/HelloWorld/HelloWorld/obj/Debug/netcoreapp1.0/HelloWorld.csprojResolveAssemblyReference.cache
+/Users/nicholasdry/Documents/GitHub/Scratch/C#/HelloWorld/HelloWorld/obj/Debug/netcoreapp1.0/HelloWorld.AssemblyInfo.cs
+/Users/nicholasdry/Documents/GitHub/Scratch/C#/HelloWorld/HelloWorld/obj/Debug/netcoreapp1.0/HelloWorld.dll
+/Users/nicholasdry/Documents/GitHub/Scratch/C#/HelloWorld/HelloWorld/obj/Debug/netcoreapp1.0/HelloWorld.pdb

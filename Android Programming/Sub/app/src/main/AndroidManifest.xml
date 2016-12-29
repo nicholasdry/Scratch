@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.nicholasdry.songlib">
+    package="com.example.nicholasdry.sub">
 
     <application
         android:allowBackup="true"
